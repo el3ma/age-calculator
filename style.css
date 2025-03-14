@@ -74,4 +74,8 @@ body{
     text-align: center;
     font-size: 1.8rem;
     color: #222E50;
+
+    @media (max-width: 390px) {
+        padding: 5% 5%;
+    }
 }
