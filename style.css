@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font: 'Roboto', sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: var(--font);
+    background-color: #439A86;
+}
+
+.tittle{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #222E50;
+    text-align: center;
+    margin-top: 15%;
+
+    @media (max-width: 1024px) {
+        padding: 25% 10% 0 10%;
+    }
+
+    @media (max-width: 390px) {
+        padding: 45% 5% 0 5%;
+        font-size: 2.2em;
+    }
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2% 35%;
+    gap: 1rem;
+    font-size: 1.8em;
+    color: #222E50;
+
+    @media (max-width: 768px) {
+        padding: 5% 15%;
+    }
+
+    @media (max-width: 390px) {
+        padding: 5% 5%;
+    }
+
+}
+
+#birthday{
+    width: 350px;
+    height: 30px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn{
+    padding: 5px 10px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    color: #439A86;
+    background-color: #115471;
+}
+
+.result{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #222E50;
+}

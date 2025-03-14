@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector de Fecha con Flatpickr y Luxon</title>
+    <!-- Incluir el CSS de Flatpickr -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="tittle">Ingresa tu fecha de nacimiento</h1>
+    <form id="birthdayForm" class="container-form">
+      <!-- <label for="birthday">Fecha de Nacimiento:</label> -->
+      <input
+        type="text"
+        id="birthday"
+        name="birthday"
+        placeholder="Selecciona una fecha"
+      />
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <p id="ageResult" class="result"></p>
+
+    <!-- Incluir Flatpickr y Luxon -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon/build/global/luxon.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
